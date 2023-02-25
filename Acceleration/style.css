@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#game {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#playarea {
+	width: 600px;
+	height: 600px;
+	margin: 50px auto;
+	position: relative;
+	background-color: #eee;
+}
+
+#enemy-counter {
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	font-size: 24px;
+}
+
+#timer {
+	position: absolute;
+	top: -30px;
+	right: 10px;
+	font-size: 24px;
+}
+
+#record-timer {
+	position: absolute;
+	top: -50px;
+	right: 10px;
+	font-size: 16px;
+}
+
+#countdown {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 64px;
+	font-weight: bold;
+}
+
+#player {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: blue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.enemy {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
